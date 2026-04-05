@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  permit:
+    build: .
+    ports:
+      - "9811:9811"
+    volumes:
+      - permit_data:/data
+    environment:
+      - PORT=9811
+volumes:
+  permit_data:
